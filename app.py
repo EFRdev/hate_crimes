@@ -31,11 +31,10 @@ st.markdown(
 # S'assumeix que aquests fitxers estan a la mateixa carpeta que aquest script de Streamlit.
 # Si no, si us plau, actualitza les rutes.
 # IMPORTANT: Utilitza raw strings (r"...") per a les rutes per evitar problemes amb les barres invertides
-PATH_GEOJSON_COMARCAS = r"/Users/enrique/code/EFRdev/00 - Post-Bootcamp/Hate_Crimes/data/divisions-administratives-v2r1-20250101/divisions-administratives-v2r1-comarques-5000-20250101.json"
-PATH_GEOJSON_MUNICIPIOS = r"/Users/enrique/code/EFRdev/00 - Post-Bootcamp/Hate_Crimes/data/divisions-administratives-v2r1-20250101/Others/divisions-administratives-v2r1-municipis-50000-20250101.json" # Encara es carrega per a la lògica d'agrupació
-PATH_GEOJSON_PROVINCIAS = r"/Users/enrique/code/EFRdev/00 - Post-Bootcamp/Hate_Crimes/data/divisions-administratives-v2r1-20250101/divisions-administratives-v2r1-provincies-5000-20250101.json"
-PATH_DELITOS_DATA = r"/Users/enrique/code/EFRdev/00 - Post-Bootcamp/Hate_Crimes/df_clean_hatecrimes_catalunya.csv" # ¡ACTUALITZA AIXÒ amb el nom i extensió correctes!
-
+PATH_GEOJSON_COMARCAS = r"data/divisions-administratives-v2r1-20250101/divisions-administratives-v2r1-comarques-5000-20250101.json"
+PATH_GEOJSON_MUNICIPIOS = r"data/divisions-administratives-v2r1-20250101/Others/divisions-administratives-v2r1-municipis-50000-20250101.json" # Encara es carrega per a la lògica d'agrupació
+PATH_GEOJSON_PROVINCIAS = r"data/divisions-administratives-v2r1-20250101/divisions-administratives-v2r1-provincies-5000-20250101.json"
+PATH_DELITOS_DATA = r"df_clean_hatecrimes_catalunya.csv" # ¡ACTUALITZA AIXÒ amb el nom i extensió correctes!
 
 # --- Càrrega de dades (amb memòria cau per millorar el rendiment) ---
 @st.cache_data
