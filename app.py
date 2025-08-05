@@ -506,5 +506,5 @@ st.markdown("""
 ### Dades i Consideracions Tècniques:
 * **Font de Dades:** Aquesta aplicació utilitza dades de delictes d'odi a Catalunya, filtrades per tipus específics (LGTBIQ+, ètnia/racial, sexisme) i agrupades per nivells geogràfics (província, comarca, municipi).
 * **Visualització:** Els mapes es generen utilitzant Folium i Streamlit, permetent una visualització interactiva de les dades geogràfiques.
-* **Dependències:** Aquesta aplicació requereix les biblioteques `sklearn`, `numpy`, `matplotlib`, `seaborn`, `streamlit`, `geop andas`, `pandas`, `folium`, `streamlit_folium`, i `unicodedata` per al seu funcionament.fica d'aquestes agrupacions, seria necessari "dissoldre" les geometries dels municipis que les componen en un sol polígon, la qual cosa és una tasca més avançada de GeoPandas.
+* **Dependències:** Aquesta aplicació requereix les biblioteques `streamlit`, `geopandas`, `pandas`, `folium`, `streamlit-folium`, `numpy`, i `plotly` per al seu funcionament.
 """)
